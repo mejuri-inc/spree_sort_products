@@ -1,3 +1,6 @@
 /*
  *= require spree/backend
 */
+ul#products {
+  margin-top: 1em;
+}
