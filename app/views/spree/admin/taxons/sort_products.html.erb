@@ -26,9 +26,7 @@
       <div class="two columns thumbnail" style = "cursor: pointer;" value="<%= product.id %>">
           <%= small_image(product, :id=>"image-map") %>
           <div class="caption">
-            <% product_name = product.name.split(" ") %>
-            <% product_name.delete(product_name.last) %>
-            <%= product_name.join(" ") %>
+            <%= product.name %>
           </div>
       </div>
     <% end %>
