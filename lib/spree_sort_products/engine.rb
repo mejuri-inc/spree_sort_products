@@ -12,7 +12,8 @@ module SpreeSortProducts
     end
 
     initializer :assets do |config|
-      Rails.application.config.assets.precompile += %w(spree/backend/taxon_tree_menu_overrides.js spree/backend/sort_products)
+      Rails.application.config.assets.precompile +=
+        %w(spree/backend/taxon_tree_menu_overrides.js spree/backend/sort_products.js)
     end
 
     def self.activate
