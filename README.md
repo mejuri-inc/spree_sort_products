@@ -14,11 +14,11 @@ Here is a quick walk through of sorting products using this extension: [Click he
         gem 'spree_sort_products' , :git => 'git://github.com/suryart/spree_sort_products.git'
       ```
 
-  * Get the 2-0-stable branch for Spree 2.0.x from github: 
+  * Get the 2-3-stable branch for Spree 2.3.x from github: 
     
       ```ruby
         gem 'jquery-dragsort-rails', '~> 1.0.0'
-        gem 'spree_sort_products' , :git => 'git://github.com/suryart/spree_sort_products.git', :branch => '2-0-stable'
+        gem 'spree_sort_products' , :git => 'https://github.com/mejuri-inc/spree_sort_products', :branch => '2-3-stable'
       ```
 
   * Or get it from rubygems.org by mentioning the following line in your Gemfile:
