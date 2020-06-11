@@ -5,11 +5,17 @@ module SpreeSortProducts
       class_option :auto_run_migrations, :type => :boolean, :default => false
 
       def add_javascripts
-        append_file 'app/assets/javascripts/admin/all.js', "//= require admin/spree_sort_products\n"
+        append_file 'vendor/assets/javascripts/spree/backend/all.js' do
+          <<~JS_LIBS
+            //= require spree/backend/spree_sort_products
+            //= require jquery-dragsort
+          JS_LIBS
+        end
       end
 
       def add_stylesheets
-        inject_into_file 'app/assets/stylesheets/admin/all.css', " *= require admin/spree_sort_products\n", :before => /\*\//, :verbose => true
+        inject_into_file 'vendor/assets/stylesheets/spree/backend/all.css',
+                         " *= require spree/backend/spree_sort_products\n", :before => /\*\//, :verbose => true
       end
 
       def add_migrations

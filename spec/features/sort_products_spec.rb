@@ -1,8 +1,8 @@
-require 'spec_helper'
+require 'rails_helper'
 
-describe 'Taxon' do
+describe Spree::Taxon do
   stub_authorization!
-  
+
   context 'admin should be able sort products within a taxon' do
     it 'goes in a taxon and sort products' do
       create_list(:products_with_taxon, 4)
@@ -15,7 +15,6 @@ describe 'Taxon' do
 
       # sleep(10)
       # need to write drag and drop and expected result check here
-
     end
   end
 end

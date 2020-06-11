@@ -1,5 +1,7 @@
 module SpreeSortProducts
   class Engine < Rails::Engine
+    require 'sass-rails'
+
     require 'spree/core'
     isolate_namespace Spree
     engine_name 'spree_sort_products'
