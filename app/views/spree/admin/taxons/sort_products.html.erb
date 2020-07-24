@@ -29,6 +29,7 @@
           <% product_name = product.name.split(" ") %>
           <% product_name.delete(product_name.last) %>
           <h5><%= product_name.join(" ") %></h5>
+          <h6><%= product.sku %></h6>
         </div>
       </div>
     <% end %>
